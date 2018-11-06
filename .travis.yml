@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- '11.1'
+cache:
+  directories:
+  - "$HOME/.npm"
+before_install:
+- npm ci
+
+script: npm run build
